@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 
 import App from './src/index';
+import MyProject from './src/MyProject';
 
 export default class Xiao extends Component {
   render() {
@@ -52,4 +53,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Xiao', () => App);
+AppRegistry.registerComponent('Xiao', () => MyProject);
