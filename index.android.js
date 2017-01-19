@@ -53,4 +53,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Xiao', () => MyProject);
+AppRegistry.registerComponent('Xiao', () => App);
