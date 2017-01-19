@@ -1,3 +1,14 @@
 {
-"presets": ["react-native"]
+    "presets": [
+        "react-native"
+    ],
+    "plugins": [
+        [
+            "import",
+            {
+                "style": "css.web",
+                "libraryName": "antd-mobile"
+            }
+        ]
+    ]
 }

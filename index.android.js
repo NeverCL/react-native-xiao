@@ -12,6 +12,8 @@ import {
   View
 } from 'react-native';
 
+import App from './src/index';
+
 export default class Xiao extends Component {
   render() {
     return (
@@ -50,4 +52,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Xiao', () => Xiao);
+AppRegistry.registerComponent('Xiao', () => App);
