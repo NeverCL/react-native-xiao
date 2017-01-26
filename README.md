@@ -1,15 +1,17 @@
-# react-native-xiao
-xiao mobile client powered by react-native
-
-
-- [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/README.zh.md)
-
+# 笑啥啊React Native App
 
 ## 命令
+- 启动packager
+`npm start`
+
 - 生成
 `gradlew assembleRelease`
 
+## 依赖资源
+- [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)
+    - 需手动link
 
+- [react-native-image-zoom-viewer](https://github.com/ascoders/react-native-image-viewer)
 
 ## 问题
 - > failed to find Build Tools revision 23.0.3
