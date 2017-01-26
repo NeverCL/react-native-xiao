@@ -4,10 +4,11 @@
  */
 
 import React, { Component } from 'react';
-import { View, Text, Button, StyleSheet, BackAndroid, Platform, ToastAndroid } from 'react-native';
+import { View, Text, Button, StyleSheet, BackAndroid, Platform, ToastAndroid, TouchableHighlight } from 'react-native';
 
 import Check from './CheckAppByPushy';
 import Push from './JPush';
+import ViewAnimate from './ViewAnimate';
 
 class Main extends Component {
     constructor() {
@@ -50,8 +51,9 @@ class Main extends Component {
         return (
             <View style={style.container}>
                 <Text style={style.info}>当前:Main组件</Text>
-                <Button color="red" title="检查更新" onPress={x => this.props.navigator.push({ component: Check })} />
-                <Button color="red" title="推送服务" onPress={x => this.props.navigator.push({ component: Push })} />
+                <Button color="#006699" title="检查更新" onPress={x => this.props.navigator.push({ component: Check })} />
+                <Button color="#006600" title="推送服务" onPress={x => this.props.navigator.push({ component: Push })} />
+                <Button color="#841584" title="动画特效" onPress={x => this.props.navigator.push({ component: ViewAnimate })} />
                 <Button color="#841584" title="进入Tabs页面" onPress={x => x} />
             </View>
         );

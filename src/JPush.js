@@ -34,6 +34,7 @@ class Push extends Component {
             <View>
                 <Button title="开启服务" onPress={() => JPushModule.initPush()} />
                 <Button title="停止服务" onPress={() => JPushModule.stopPush()} />
+                <Button title="返回" color="#841584" onPress={() => this.props.navigator.pop()} />
                 <Button title="恢复服务" onPress={() => JPushModule.resumePush()} />
                 <Button title="获取RegistrationId" onPress={() => JPushModule.getRegistrationID((registrationId) => {
                     this.setState({

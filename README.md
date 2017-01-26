@@ -15,8 +15,9 @@
 
 - [react-native-image-zoom-viewer](https://github.com/ascoders/react-native-image-viewer)
 
-
 - [jpush-react-native](https://github.com/jpush/jpush-react-native)
+
+- [react-native-orientation](https://github.com/yamill/react-native-orientation)
 
 ## 问题
 - > failed to find Build Tools revision 23.0.3
