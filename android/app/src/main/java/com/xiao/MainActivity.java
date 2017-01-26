@@ -1,6 +1,7 @@
 package com.xiao;
 
 import com.facebook.react.ReactActivity;
+import cn.jpush.reactnativejpush.JPushPackage;
 
 public class MainActivity extends ReactActivity {
 

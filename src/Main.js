@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 import { View, Text, Button, StyleSheet, BackAndroid, Platform, ToastAndroid } from 'react-native';
 
 import Check from './CheckAppByPushy';
+import Push from './JPush';
 
 class Main extends Component {
     constructor() {
@@ -50,6 +51,7 @@ class Main extends Component {
             <View style={style.container}>
                 <Text style={style.info}>当前:Main组件</Text>
                 <Button color="red" title="检查更新" onPress={x => this.props.navigator.push({ component: Check })} />
+                <Button color="red" title="推送服务" onPress={x => this.props.navigator.push({ component: Push })} />
                 <Button color="#841584" title="进入Tabs页面" onPress={x => x} />
             </View>
         );

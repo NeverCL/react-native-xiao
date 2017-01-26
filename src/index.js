@@ -9,6 +9,7 @@ import { Navigator, BackAndroid, Platform } from 'react-native';
 import Main from './Main';
 
 class App extends Component {
+
     render() {
         return (
             <Navigator
