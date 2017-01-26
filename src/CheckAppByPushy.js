@@ -6,7 +6,7 @@
 
 import React, { Component } from 'react';
 import { Button, View } from 'antd-mobile';
-import { Alert, Modal, Text, StyleSheet } from 'react-native';
+import { Platform, Alert, Modal, Text, StyleSheet } from 'react-native';
 import {
     isFirstTime,
     isRolledBack,
@@ -27,10 +27,11 @@ class CheckAppByPushy extends Component {
             if (info.upToDate) {
                 Alert.alert('提示', new Date() + '您的应用版本已是最新.');
             } else {
-                let str = `检查到新版本:
-                名称:${info.name}
-                描述:${info.description}
-                是否立即更新`;
+                let str = 
+`检查到新版本!
+时间:${new Date().toLocaleString('yyyy-MM-dd hh:mm:ss')}
+名称:${info.name} 描述:${info.description}
+是否立即更新?`;
 
                 Alert.alert('提示', str, [{
                     text: '是', onPress: () => downloadUpdate(info)
@@ -44,21 +45,21 @@ class CheckAppByPushy extends Component {
 
     render() {
         return (
-            <View>
+            <View style={{ flex: 1 }}>
                 <Text style={style.info}>
                     当前包版本号:{packageVersion + '\n'}
-                    当前版本Hash:{currentVersion}
+                    当前版本Hash:{currentVersion || '空'}
                 </Text>
+                <Button onClick={() => this.props.navigator.pop()}>返回</Button>
                 <Button onClick={this.checkUpdate}>在线更新</Button>
-            </View>
+            </View >
         );
     }
 }
 
 const style = StyleSheet.create({
     info: {
-        flex: 1,
-        alignItems: 'center',
+        textAlign: 'center',
     }
 })
 
